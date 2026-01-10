@@ -3,16 +3,22 @@ import Layout from "@/components/Layout";
 // بيانات الخبرات الخاصة بك
 const experiences = [
   {
-    title: "مطور واجهات أمامي (Frontend Developer)",
-    company: "اسم الشركة الحالية",
-    period: "2023 - الحالي",
-    description: "تطوير واجهات المستخدم باستخدام React و Tailwind CSS وتحسين أداء المواقع.",
+    title: "Grapic Designer and UI/UX",
+    company: "SmartGenx Company.",
+    period: "2022 - until now",
+    description: "Al Mukalla",
   },
   {
-    title: "مصمم مواقع ويب",
-    company: "عمل حر (Freelance)",
-    period: "2021 - 2023",
-    description: "تصميم وتنفيذ العديد من المتاجر الإلكترونية والمواقع الشخصية للعملاء.",
+    title: "Grapic Designer",
+    company: "Al Omran Institute for Studies and Capacity Building.",
+    period: "JAN 2022 - DEC 2022",
+    description: "Al Mukalla",
+  },
+    {
+    title: "Engineering Assistant",
+    company: "Vision of Excellence for Engineering Consultations.",
+    period: "MAR 2020 - OCT 2020",
+    description: "Al Mukalla",
   },
 ];
 
@@ -20,9 +26,9 @@ const Experiences = () => {
   return (
     <Layout>
       <div className="animate-fade-in text-right" dir="rtl">
-        <h1 className="mb-4 text-4xl font-bold text-foreground">الخبرات العملية</h1>
+        <h1 className="mb-4 text-4xl font-bold text-foreground">Employment History</h1>
         <p className="mb-8 text-muted-foreground">
-          ملخص لمسيرتي المهنية والخبرات التي اكتسبتها.
+        
         </p>
         
         <div className="space-y-6">

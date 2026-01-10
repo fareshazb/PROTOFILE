@@ -1,35 +1,50 @@
 import Layout from "@/components/Layout";
+import { 
+  SiFigma, 
+  SiAdobephotoshop, 
+  SiAdobeillustrator, 
+  SiAutodeskrevit, 
+  SiSketchup 
+} from "react-icons/si";
+
+// 1. استيراد الصور بالامتدادات الصحيحة والمعدلة
+import vrayIcon from "../assets/icons/vray.png";
+import lumionIcon from "../assets/icons/lumion.webp";
 
 const stackCategories = [
   {
     title: "Design",
     items: [
-      { name: "Figma", description: "Collaborative Design", icon: "🎨" },
-      { name: "Adobe XD", description: "UI/UX Design", icon: "✨" },
-      { name: "Photoshop", description: "Image Editing", icon: "🖼️" },
-      { name: "Illustrator", description: "Vector Graphics", icon: "🎯" },
-    ],
+      { name: "Figma", description: "Collaborative Design", icon: <SiFigma color="#F24E1E" /> },
+      { name: "Photoshop", description: "Image Editing", icon: <SiAdobephotoshop color="#31A8FF" /> },
+      { name: "Illustrator", description: "Vector Graphics", icon: <SiAdobeillustrator color="#FF9A00" /> }
+    ]
   },
   {
     title: "Architecture",
     items: [
-      { name: "Revit", description: "BIM Modeling", icon: "⚡" },
-      { name: "V-Ray", description: "Photorealistic Rendering", icon: "🌐" },
-      { name: "Sketchup", description: "3D Modeling", icon: "⚛️" },
-      { name: "Lumion", description: "Cinematic Rendering", icon: "💅" },
-    ],
-  },
-
+      { name: "Revit", description: "BIM Modeling", icon: <SiAutodeskrevit color="#0696D7" /> },
+      { 
+        name: "V-Ray", 
+        description: "Photorealistic Rendering", 
+        icon: <img src={vrayIcon} alt="V-Ray" className="w-10 h-10 object-contain" /> 
+      },
+      { name: "Sketchup", description: "3D Modeling", icon: <SiSketchup color="#005F9E" /> },
+      { 
+        name: "Lumion", 
+        description: "Cinematic Rendering", 
+        icon: <img src={lumionIcon} alt="Lumion" className="w-10 h-10 object-contain" /> 
+      }
+    ]
+  }
 ];
 
 const Stack = () => {
   return (
     <Layout>
-      <div className="animate-fade-in">
+      <div className="animate-fade-in px-4 py-10">
         <h1 className="mb-4 text-4xl font-bold text-foreground">My Stack</h1>
-        <p className="mb-8 text-muted-foreground">
-          The tools and technologies I use to bring ideas to life.
-        </p>
+        <p className="mb-8 text-muted-foreground">The tools and technologies I use to bring ideas to life.</p>
         
         <div className="space-y-12">
           {stackCategories.map((category, categoryIndex) => (
@@ -45,11 +60,11 @@ const Stack = () => {
                       animationFillMode: "forwards" 
                     }}
                   >
-                    <div className="mb-3 text-2xl">{item.icon}</div>
-                    <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">
-                      {item.name}
-                    </h3>
-                    <p className="text-sm text-muted-foreground">{item.description}</p>
+                    <div className="mb-4 flex items-center justify-start h-12 w-12 text-4xl transform group-hover:scale-110 transition-transform duration-300">
+                      {item.icon}
+                    </div>
+                    <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">{item.name}</h3>
+                    <p className="text-sm text-muted-foreground line-clamp-2">{item.description}</p>
                   </div>
                 ))}
               </div>

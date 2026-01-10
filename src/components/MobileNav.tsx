@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Home, User, Briefcase, Layers, Mail, FileText, Menu, X, Instagram, Linkedin, } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
-import profilePhoto from "@/assets/profile-photo.jpg";
+import profilePhoto from "@/assets/muaaz.jpg";
 
 const navItems = [
   { icon: Home, label: "Home", href: "/" },

@@ -9,7 +9,7 @@ import { useToast } from "@/hooks/use-toast";
 const contactInfo = [
   { icon: Mail, label: "Email", value: "m3ath930@gmail.com" },
   { icon: Phone, label: "Phone", value: "+967 736 071 989" },
-  { icon: MapPin, label: "Location", value: "Muaaz Abd Al-Rib Bin Hazeb" },
+  { icon: MapPin, label: "Location", value: "Al Mukalla, Hadramout, Yemen" },
 ];
 
 const Contact = () => {

@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import { Download, Award, Users, Briefcase, BookOpen, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import profilePhoto from "@/assets/profile-photo.jpg";
+import profilePhoto from "@/assets/muaaz.jpg";
 
 const stats = [
   { icon: Briefcase, value: "50+", label: "Projects Completed" },
@@ -11,9 +11,9 @@ const stats = [
 
 // هذه هي قائمة الدورات، يمكنك تعديل المسميات هنا بسهولة
 const courses = [
-  { title: "دورة تصميم واجهات المستخدم UI/UX", provider: "Coursera" },
-  { title: "دورة تصميم الهوية البصرية", provider: "Udemy" },
-  { title: "أساسيات تجربة المستخدم", provider: "Google" },
+  { title: "Diploma in Graphic Design Programs (Photoshop - Illustrator - InDesign)", provider: "2022" },
+  { title: "3D Max Course", provider: "2021" },
+  { title: "Revit & Lumion Course", provider: "2021" },
 ];
 
 const About = () => {
@@ -27,7 +27,7 @@ const About = () => {
             <div className="overflow-hidden rounded-xl">
               <img
                 src={profilePhoto}
-                alt="Kaysar Zamy"
+                alt="Muaaz Bin Hazeb"
                 className="w-full object-cover aspect-square"
               />
             </div>
@@ -41,20 +41,15 @@ const About = () => {
           <div className="space-y-6">
             <div>
               <h2 className="mb-4 text-2xl font-bold text-foreground">
-                UI/UX Designer & Creative Thinker
+                UI/UX Designer
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                I'm Kaysar Zamy, a passionate UI/UX designer based in Dhaka, Bangladesh. 
-                With over 5 years of experience in the design industry, I specialize in 
-                creating intuitive and visually stunning digital experiences.
+                I’m Moaaz, a UI/UX Designer specializing in building integrated digital solutions. My role goes beyond visual design; I focus on analyzing user journeys and simplifying complex processes. My constant goal is to develop designs that support business objectives while ensuring a seamless, friction-free user experience.
               </p>
             </div>
             
             <p className="text-muted-foreground leading-relaxed">
-              My approach combines aesthetics with functionality, ensuring that every 
-              design not only looks beautiful but also provides an exceptional user 
-              experience. I believe in the power of design to solve problems and 
-              create meaningful connections between brands and their audiences.
+            
             </p>
             
             <div className="grid gap-4 sm:grid-cols-3">
@@ -75,7 +70,7 @@ const About = () => {
             <div className="pt-6 border-t border-border">
               <h3 className="mb-4 text-xl font-bold text-foreground flex items-center gap-2">
                 <BookOpen className="h-5 w-5 text-primary" />
-                Courses (الدورات)
+                Courses 
               </h3>
               <div className="grid gap-3">
                 {courses.map((course, index) => (
