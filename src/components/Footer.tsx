@@ -5,13 +5,21 @@ const Footer = () => {
     <footer className="border-t border-border py-8">
       <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
         <div className="text-center sm:text-left">
-          <Link to="/contact" className="text-xl font-bold text-foreground hover:text-primary transition-colors">
+          <Link to="/contact" className="text-gradient">
             Let's Connect!
           </Link>
+        </div>
+
+        <div className="flex items-center gap-1 text-sm text-muted-foreground">
+          <span>___</span>
         </div>
         
         <div className="flex items-center gap-1 text-sm text-muted-foreground">
           <span>© Copyright 2026. All rights Reserved.</span>
+        </div>
+
+        <div className="flex items-center gap-1 text-sm text-muted-foreground">
+          <span>___</span>
         </div>
         
         <div className="flex items-center gap-1 text-sm text-muted-foreground">

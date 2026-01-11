@@ -8,7 +8,7 @@ const HeroSection = () => {
       <div className="animate-fade-in">
         <h1 className="mb-6 text-4xl font-bold leading-tight text-foreground md:text-5xl lg:text-6xl">
           Hello Everyone! I'm{" "}
-          <span className="text-gradient">Muaaz Bin Hazeb</span>
+          <span className="mb-6 text-4xl font-bold leading-tight text-foreground md:text-5xl lg:text-6xl">Muaaz Bin Hazeb</span>
         </h1>
         
         <p className="mb-8 max-w-2xl text-lg text-muted-foreground leading-relaxed">
