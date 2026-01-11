@@ -5,10 +5,11 @@ import profilePhoto from "@/assets/muaaz.jpg";
 const navItems = [
   { icon: Home, label: "Home", href: "/" },
   { icon: User, label: "About", href: "/about" },
+  { icon: FileText, label: "Experiences", href: "/experiences" },
   { icon: Briefcase, label: "Projects", href: "/projects" },
   { icon: Layers, label: "Stack", href: "/stack" },
   { icon: Mail, label: "Contact", href: "/contact" },
-  { icon: FileText, label: "Experiences", href: "/experiences" },
+  
 ];
 
 const socialLinks = [

@@ -14,7 +14,7 @@ const experiences = [
     period: "JAN 2022 - DEC 2022",
     description: "Al Mukalla",
   },
-    {
+  {
     title: "Engineering Assistant",
     company: "Vision of Excellence for Engineering Consultations.",
     period: "MAR 2020 - OCT 2020",
@@ -25,10 +25,11 @@ const experiences = [
 const Experiences = () => {
   return (
     <Layout>
-      <div className="animate-fade-in text-right" dir="rtl">
+      {/* 1. قمنا بتغيير text-left للمحاذاة لليسار و pb-12 للمسافة السفلية */}
+      <div className="animate-fade-in text-left pb-12" dir="ltr">
         <h1 className="mb-4 text-4xl font-bold text-foreground">Employment History</h1>
         <p className="mb-8 text-muted-foreground">
-        
+          {/* يمكنك إضافة نص وصفي هنا */}
         </p>
         
         <div className="space-y-6">
@@ -38,7 +39,8 @@ const Experiences = () => {
               className="rounded-xl bg-card border border-border p-6 animate-fade-in opacity-0"
               style={{ animationDelay: `${index * 100}ms`, animationFillMode: "forwards" }}
             >
-              <div className="flex justify-between items-start mb-2 flex-row-reverse">
+              {/* 2. حذفنا flex-row-reverse ليكون العنوان يسار والتاريخ يمين */}
+              <div className="flex justify-between items-start mb-2">
                 <h3 className="text-xl font-semibold text-foreground">{exp.title}</h3>
                 <span className="text-sm font-medium text-primary bg-primary/10 px-3 py-1 rounded-full">
                   {exp.period}

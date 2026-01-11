@@ -18,7 +18,7 @@ const projects = [
 const Projects = () => {
   return (
     <Layout>
-      <div className="animate-fade-in">
+      <div className="animate-fade-in text-right pb-12" dir="rtl">
         <h1 className="mb-4 text-4xl font-bold text-foreground">Projects</h1>
         <p className="mb-8 text-muted-foreground">
           A collection of my recent work across various industries and platforms.

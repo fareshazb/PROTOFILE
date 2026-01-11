@@ -31,7 +31,8 @@ const Contact = () => {
 
   return (
     <Layout>
-      <div className="animate-fade-in">
+      {/* 1. تغيير الاتجاه إلى ltr والمحاذاة إلى left */}
+      <div className="animate-fade-in text-left pb-12" dir="ltr">
         <h1 className="mb-4 text-4xl font-bold text-foreground">Get in Touch</h1>
         <p className="mb-8 text-muted-foreground">
           Have a project in mind? Let's work together to create something amazing.

@@ -9,7 +9,6 @@ const stats = [
   { icon: Award, value: "5+", label: "Years Experience" },
 ];
 
-// هذه هي قائمة الدورات، يمكنك تعديل المسميات هنا بسهولة
 const courses = [
   { title: "Diploma in Graphic Design Programs (Photoshop - Illustrator - InDesign)", provider: "2022" },
   { title: "3D Max Course", provider: "2021" },
@@ -48,10 +47,6 @@ const About = () => {
               </p>
             </div>
             
-            <p className="text-muted-foreground leading-relaxed">
-            
-            </p>
-            
             <div className="grid gap-4 sm:grid-cols-3">
               {stats.map((stat, index) => (
                 <div
@@ -66,16 +61,16 @@ const About = () => {
               ))}
             </div>
 
-            {/* --- بداية قسم الدورات الإضافي --- */}
-            <div className="pt-6 border-t border-border">
+            {/* --- قسم الدورات مع المسافات المضبطة --- */}
+            <div className="pt-6 border-t border-border pb-8"> {/* أضفنا pb-8 هنا لزيادة المسافة في الأسفل */}
               <h3 className="mb-4 text-xl font-bold text-foreground flex items-center gap-2">
                 <BookOpen className="h-5 w-5 text-primary" />
                 Courses 
               </h3>
               <div className="grid gap-3">
                 {courses.map((course, index) => (
-                  <div key={index} className="flex items-center gap-3 p-3 rounded-lg bg-secondary/20 border border-border">
-                    <CheckCircle className="h-4 w-4 text-primary" />
+                  <div key={index} className="flex items-start gap-3 p-3 rounded-lg bg-secondary/20 border border-border">
+                    <CheckCircle className="h-4 w-4 text-primary shrink-0 mt-0.5" />
                     <div>
                       <p className="font-medium text-sm text-foreground">{course.title}</p>
                       <p className="text-xs text-muted-foreground">{course.provider}</p>
@@ -84,8 +79,6 @@ const About = () => {
                 ))}
               </div>
             </div>
-            {/* --- نهاية قسم الدورات الإضافي --- */}
-
           </div>
         </div>
       </div>
